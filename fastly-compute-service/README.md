@@ -1,4 +1,6 @@
-# Compute@Edge Service
+# Fastly Compute@Edge Service
 
-fastly service create --name="Fastly Logs Realtime Analytics" --type=wasm
-fastly backend create --version=latest --name="gdn_url" --address="api-gdn.paas.macrometa.io" --port=443
+## References
+
+-   [Compute@Edge JS](https://developer.fastly.com/learning/compute/javascript/)
+-   [Compute@Edge JS Examples](https://developer.fastly.com/solutions/examples/javascript/)
