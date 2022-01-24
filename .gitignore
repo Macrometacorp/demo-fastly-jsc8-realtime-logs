@@ -1,0 +1,9 @@
+*/node_modules
+*/.env
+*/pkg
+*/build
+*/bin
+*/.env.gdn
+*/.env.dev
+*/.DS_Store
+*/nginx

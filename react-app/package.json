@@ -1,0 +1,56 @@
+{
+    "name": "demo-fastly-jsc8-realtime-logs",
+    "version": "0.1.0",
+    "homepage": "https://macrometacorp.github.io/demo-fastly-jsc8-realtime-logs",
+    "private": true,
+    "dependencies": {
+        "@material-ui/core": "^4.12.1",
+        "@testing-library/jest-dom": "^5.14.1",
+        "@testing-library/react": "^11.2.7",
+        "@testing-library/user-event": "^12.8.3",
+        "chart.js": "^3.4.1",
+        "chartjs-adapter-luxon": "^1.0.0",
+        "chartjs-plugin-datalabels": "^2.0.0",
+        "chartjs-plugin-streaming": "^2.0.0",
+        "dotenv": "^10.0.0",
+        "gh-pages": "^3.2.3",
+        "jsc8": "^0.17.3-beta.1",
+        "lodash": "^4.17.21",
+        "luxon": "^2.0.1",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2",
+        "react-scripts": "4.0.3",
+        "react-wordcloud": "^1.2.7",
+        "web-vitals": "^1.1.2"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build",
+        "format": "./node_modules/.bin/prettier --write 'src/**/*.{js,jsx,json,md}'"
+    },
+    "eslintConfig": {
+        "extends": [
+            "react-app",
+            "react-app/jest"
+        ]
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "devDependencies": {
+        "prettier": "^2.3.2"
+    }
+}

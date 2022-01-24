@@ -1,0 +1,19 @@
+# This file describes a Fastly Compute@Edge package. To learn more visit:
+# https://developer.fastly.com/reference/fastly-toml/
+
+authors = ["Macrometa Inc."]
+description = "Realtime log analytics for Fastly Compute logs with Macrometa GDN."
+language = "javascript"
+manifest_version = 2
+name = "Fastly Compute Edge Logs Realtime Analytics"
+service_id = ""
+
+[local_server]
+  [local_server.backends]
+    [local_server.backends.gdn_url]
+      url = "https://api-gdn.paas.macrometa.io"
+
+  [local_server.dictionaries]
+    [local_server.dictionaries.env]
+      file = "env.json"
+      format = "json"
