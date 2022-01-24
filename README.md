@@ -142,8 +142,6 @@ Remove bin folder
 fastly compute serve
 ```
 
-4. Verify that Fastly logs are successfully delivering to your GDN logs collection.
-
 For more information, refer to [Fastly HTTP Logging Guide](https://docs.fastly.com/en/guides/log-streaming-https).
 
 **Sample Log Format:**
