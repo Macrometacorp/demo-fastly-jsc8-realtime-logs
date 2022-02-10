@@ -1,12 +1,19 @@
 from fastapi import FastAPI, Request
 from fastapi.responses import PlainTextResponse
 from c8 import C8Client
-from src.config import GDN_URL, GDN_USERNAME, GDN_PASSWORD, COLLECTION_NAME, SERVICE_ID
+from src.config import GDN_URL, GDN_API_KEY, COLLECTION_NAME, SERVICE_ID
 
 import hashlib
 
 app = FastAPI(
     title="fastly-challenge-logs-api",
+)
+
+client = C8Client(
+    protocol="https",
+    host=GDN_URL,
+    port=443,
+    apikey=GDN_API_KEY
 )
 
 
@@ -27,13 +34,6 @@ def fastly_http_challenge():
 @app.post("/logs")
 async def post_logs_to_gdn(request: Request):
     requestBody = await request.json()
-    client = C8Client(
-        protocol="https",
-        host=GDN_URL,
-        port=443,
-        email=GDN_USERNAME,
-        password=GDN_PASSWORD
-    )
 
     client.insert_document(
         collection_name=COLLECTION_NAME, document=requestBody)
