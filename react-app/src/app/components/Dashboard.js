@@ -52,7 +52,16 @@ const Dashboard = () => {
     const [responseLatencyStatsData, setResponseLatencyStatsData] = useState([])
     const [responseSizeStatsData, setResponseSizeStatsData] = useState([])
 
+    const handleClose = (event) => {
+        event.preventDefault()
+        handleOnStop()
+        // This is opening alert message
+        event.returnValue = ""
+        return ""
+    }
+
     useEffect(() => {
+        window.addEventListener("beforeunload", handleClose)
         const getInitialChartData = async () => {
             const _responseSizeStatsData = await executeRestql(restQlNames.getStatsByCollection, {
                 "@collection": collections[1],
@@ -70,6 +79,9 @@ const Dashboard = () => {
         }
 
         getInitialChartData()
+        return () => {
+            window.removeEventListener("beforeunload", handleClose)
+        }
     }, [])
 
     const messageManipulation = (message, streamName) => {
