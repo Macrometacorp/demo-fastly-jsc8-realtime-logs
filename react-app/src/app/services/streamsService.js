@@ -8,10 +8,12 @@ const jsc8Client = new jsC8({
 })
 
 const activateStreamApp = async (steamsApps, active) => {
+    const streamPromises = []
     try {
-        for (const app of steamsApps) {
-            await jsc8Client.activateStreamApp(app, active)
-        }
+        steamsApps.forEach((app) => {
+            streamPromises.push(jsc8Client.activateStreamApp(app, active))
+        })
+        await Promise.all(streamPromises)
         return true
     } catch (error) {
         console.error("Failed start or stop streams", error.message)
