@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/demo-fastly-jsc8-realtime-logs/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/demo-fastly-jsc8-realtime-logs/static/js/main.897a3e35.chunk.js",
-    "main.js.map": "/demo-fastly-jsc8-realtime-logs/static/js/main.897a3e35.chunk.js.map",
+    "main.js": "/demo-fastly-jsc8-realtime-logs/static/js/main.7a75c26d.chunk.js",
+    "main.js.map": "/demo-fastly-jsc8-realtime-logs/static/js/main.7a75c26d.chunk.js.map",
     "runtime-main.js": "/demo-fastly-jsc8-realtime-logs/static/js/runtime-main.6c0b9c11.js",
     "runtime-main.js.map": "/demo-fastly-jsc8-realtime-logs/static/js/runtime-main.6c0b9c11.js.map",
     "static/css/2.3cd4cbfd.chunk.css": "/demo-fastly-jsc8-realtime-logs/static/css/2.3cd4cbfd.chunk.css",
@@ -20,6 +20,6 @@
     "static/css/2.3cd4cbfd.chunk.css",
     "static/js/2.072ca2ce.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.897a3e35.chunk.js"
+    "static/js/main.7a75c26d.chunk.js"
   ]
 }
