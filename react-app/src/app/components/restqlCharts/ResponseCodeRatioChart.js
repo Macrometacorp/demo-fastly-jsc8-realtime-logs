@@ -23,8 +23,9 @@ const ResponseCodeRatioChart = ({ clearChart }) => {
             data,
             backgroundColor: [
                 "rgba(64, 81, 181, 1)",
-                "rgba(230, 103, 103,1)",
                 "rgba(64, 81, 181, 0.6)",
+                "rgba(64, 81, 181, 0.4)",
+                "rgba(230, 103, 103,1)",
                 "rgba(230, 103, 103,0.6)",
             ],
         }

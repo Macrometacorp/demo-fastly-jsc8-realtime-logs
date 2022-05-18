@@ -16,7 +16,7 @@ export const createCollectionWithSeedData = async (response) => {
         const requestUrl = `${getEnv(DICTIONARY_ITEM_KEYS.API_URL)}${GDN_API_PATHS.COLLECTION}`
         const requestBody = JSON.stringify({
             name: COLLECTION_NAME,
-            isSystem: true,
+            isSystem: false,
             keyOptions: {
                 allowUserKeys: false,
                 type: "uuid",
