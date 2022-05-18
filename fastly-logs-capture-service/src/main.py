@@ -26,6 +26,7 @@ def pong():
 
 
 @app.get("/", response_class=PlainTextResponse)
+@app.get("/.well-known/fastly/logging/challenge", response_class=PlainTextResponse)
 def fastly_http_challenge():
     checksum = hashlib.sha256(SERVICE_ID.encode('utf-8')).hexdigest()
     return checksum
