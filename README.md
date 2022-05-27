@@ -114,7 +114,7 @@ Note: If you have run this tutorial before, you might want to truncate the colle
     # Replace `DICTIONARY_ID` with dictionary id from above command.
     $ fastly dictionary-item create --dictionary-id="DICTIONARY_ID" --key="backend_name" --value="gdn_url"
     $ fastly dictionary-item create --dictionary-id="DICTIONARY_ID" --key="logging_endpoint_name" --value="gdn_logging"
-    $ fastly dictionary-item create —dictionary-id="DICTIONARY_ID" --key="gdn_api_key" —value="GDN_API_KEY"
+    $ fastly dictionary-item create —dictionary-id="DICTIONARY_ID" --key="gdn_api_key" --value="GDN_API_KEY"
     $ fastly dictionary-item create --dictionary-id="DICTIONARY_ID" \
       --key="gdn_api_url" \
       --value="https://api-gdn.paas.macrometa.io/_fabric/_system/_api"
