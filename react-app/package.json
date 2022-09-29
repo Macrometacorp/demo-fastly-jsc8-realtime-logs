@@ -1,7 +1,7 @@
 {
-    "name": "demo-fastly-jsc8-realtime-logs",
+    "name": "demo-jsc8-realtime-logs",
     "version": "0.1.0",
-    "homepage": "https://macrometacorp.github.io/demo-fastly-jsc8-realtime-logs",
+    "homepage": "https://macrometacorp.github.io/demo-jsc8-realtime-logs",
     "private": true,
     "dependencies": {
         "@material-ui/core": "^4.12.1",
