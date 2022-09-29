@@ -52,17 +52,17 @@ const Header = () => {
             <Grid container justifyContent="flex-start" alignItems="center" wrap="nowrap">
                 <img alt="Macrometa" className={classes.logo} src={MacrometaLogo} />
                 <Typography variant="h1" className={classes.heading}>
-                    Fastly Edgeworker Realtime Log Analytics
+                    Realtime Log Analytics
                 </Typography>
                 <Typography className={classes.subheading}>
-                    Featuring Stream Workers and Query Workers for Fastly Edgeworker log data
+                    Featuring Stream Workers and Query Workers for log data
                 </Typography>
             </Grid>
             <Grid container justifyContent="flex-end" alignItems="center" wrap="nowrap">
                 <Button
                     className={classes.aboutButton}
                     onClick={() => {
-                        window.open("https://github.com/Macrometacorp/demo-fastly-jsc8-realtime-logs", "_blank")
+                        window.open("https://github.com/Macrometacorp/demo-jsc8-realtime-logs", "_blank")
                     }}
                     variant="contained"
                 >
