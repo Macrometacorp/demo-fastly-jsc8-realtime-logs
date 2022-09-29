@@ -1,6 +1,6 @@
 {
-    "short_name": "Fastly Logs Realtime Analysis",
-    "name": "Macrometa Fastly Realtime Logs Analysis",
+    "short_name": "Realtime Log Analytics",
+    "name": "Macrometa Realtime Log Analytics",
     "icons": [
         {
             "src": "favicon.png",
